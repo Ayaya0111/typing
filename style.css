@@ -1,0 +1,133 @@
+body {
+  background-image: url(./bg.jpg);
+  color: #fff;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px;
+}
+nav {
+  margin-right: 100px;
+}
+nav ul {
+  display: flex;
+
+  list-style: none;
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+nav ul li {
+  margin-right: 40px;
+  font-weight: bold;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  white-space: nowrap;
+}
+
+h1 svg {
+  width: 40px;
+  fill: rgb(180, 110, 238);
+  margin-left: 200px;
+}
+h1 {
+  color: rgb(146, 151, 223);
+  display: flex;
+  align-items: center;
+  gap: 10px; /* khoảng cách giữa icon và chữ */
+  font-size: 24px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+}
+
+main {
+  display: flex;
+  height: 80vh;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+  width: 1500px;
+  margin: 50px auto;
+}
+.left-info {
+  color: #1f2429;
+  min-height: 300px;
+  font-size: 40px;
+  padding: 50px;
+  border-radius: 10px;
+  background-color: #d7d9da;
+  box-shadow: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.left-item {
+  text-align: center;
+  padding: 20px 0;
+  border-bottom: #000000 1px solid;
+}
+.left-item:last-child{
+  border-bottom:none;
+}
+
+.right-info {
+  color: #000000;
+  background-color: #ffffff;
+  font-size: 20px;
+  padding: 50px;
+  border-radius: 10px;
+  box-shadow: -10px 10px 20px rgba(168, 184, 79, 0.5);
+}
+.keyboard {
+  background-color: #2e2e2e;
+  border-radius: 20px;
+  box-shadow: 10px 10px 10px rgb(6, 7, 22);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px;
+  margin: 20px;
+}
+.row {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.key {
+  color: #ffffff;
+  width: 60px;
+  height: 60px;
+  background-color: rgb(61, 59, 59);
+  border: 1px solid #4c5872;
+  border-radius: 5px;
+  text-align: center;
+  line-height: 60px;
+  font-size: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: background 0.2s, transform 0.1s;
+}
+.typing-space {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#input-box {
+  width: 800px;
+  height: 40px;
+  font-size: 28px;
+  padding: 8px;
+}
+.key.active {
+  background-color: #888f97;
+  color: rgb(255, 255, 255);
+  transform: scale(1.1);
+}
+
+.key.space {
+  width: 240px;
+  text-transform: uppercase;
+}
